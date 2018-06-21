@@ -165,26 +165,62 @@
                 <tr class="sc2__eventTable__row">
                     <td class="sc2__eventTable__timeColumn">10am - 12pm</td>
                     <td class="sc2__eventTable__eventDescColumn">Introduction and presentations about Envado
-                        <a href="#"><img src="img/more_icon.png" alt="Show more"></a>
+                        <a href="javascript:showEventDetails(0)"><img src="img/more_icon.png" alt="Show more"></a>
                     </td>
+                </tr>
+                <tr class="sc2__eventTable__row-details"
+                id="eventTable-introDetails"
+                style="display: none">
+                    <td colspan="2"><p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Ipsa alias natus rem sit est iste veniam
+                        officiis esse sunt illo, ducimus vitae debitis
+                        error dolor, ea quaerat fugiat necessitatibus
+                        exercitationem!</p></td>
                 </tr>
                 <tr class="sc2__eventTable__row">
                     <td class="sc2__eventTable__timeColumn">12am - 02pm</td>
                     <td class="sc2__eventTable__eventDescColumn">Sessions by honorable guests and Speakers
-                        <a href="#"><img src="img/more_icon.png" alt="Show more"></a>
+                        <a href="javascript:showEventDetails(1)"><img src="img/more_icon.png" alt="Show more"></a>
                     </td>
                 </tr>
+                <tr class="sc2__eventTable__row-details"
+                id="eventTable-guestSessions"
+                style="display: none">
+                    <td colspan="2"><p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Ipsa alias natus rem sit est iste veniam
+                        officiis esse sunt illo, ducimus vitae debitis
+                        error dolor, ea quaerat fugiat necessitatibus
+                        exercitationem!</p></td>
+                    </tr>
                 <tr class="sc2__eventTable__row">
                     <td class="sc2__eventTable__timeColumn">02pm - 03pm</td>
                     <td class="sc2__eventTable__eventDescColumn">Break and Mingle time with the authors
-                        <a href="#"><img src="img/more_icon.png" alt="Show more"></a>
+                        <a href="javascript:showEventDetails(2)"><img src="img/more_icon.png" alt="Show more"></a>
                     </td>
                 </tr>
+                <tr class="sc2__eventTable__row-details"
+                id="eventTable-break"
+                style="display: none">
+                    <td colspan="2"><p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Ipsa alias natus rem sit est iste veniam
+                        officiis esse sunt illo, ducimus vitae debitis
+                        error dolor, ea quaerat fugiat necessitatibus
+                        exercitationem!</p></td>
+                    </tr>
                 <tr class="sc2__eventTable__row">
                     <td class="sc2__eventTable__timeColumn">03pm - 05pm</td>
                     <td class="sc2__eventTable__eventDescColumn">Portfolio Review, Rewards and Ending Presentation
-                        <a href="#"><img src="img/more_icon.png" alt="Show more"></a>
+                        <a href="javascript:showEventDetails(3)"><img src="img/more_icon.png" alt="Show more"></a>
                     </td>
+                </tr>
+                <tr class="sc2__eventTable__row-details"
+                id="eventTable-ending"
+                style="display: none">
+                    <td colspan="2"><p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Ipsa alias natus rem sit est iste veniam
+                        officiis esse sunt illo, ducimus vitae debitis
+                        error dolor, ea quaerat fugiat necessitatibus
+                        exercitationem!</p></td>
                 </tr>
             </table>
             <div class="sc2__eventTimeNote">
@@ -352,6 +388,7 @@
     </section>
     <section class="sc7">
         <div class="sc7__mapWrapper">
+            <button id="sc7__mapWrapper__feedbackButton">Show Feedback Form</button>
             <div id="sc7__mapWrapper__map"></div>
         </div>
         <div class="sc7__feedback">
@@ -418,7 +455,7 @@
             <a href="javascript:nav(6)"><img src="img/arrow.png" alt="Go top"></a>
         </div>
     </footer>
-    <script defer
+    <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFityJ7LDRKqlSnQoNojIUG6z8sj63MB8&callback=initMap">
     </script>
     <script src="js/scripts.min.js"></script>
